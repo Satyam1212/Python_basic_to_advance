@@ -3,6 +3,7 @@ selfish = '01234567'
 
 print(selfish[0]) #0
 
+# Slicing
 #[start:stop:stepover]
 print(selfish[0:8:1])#01234567
 
