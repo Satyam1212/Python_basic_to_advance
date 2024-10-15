@@ -1,7 +1,7 @@
 # OOP
 class PlayerCharacter:
     membership = True # Class Object Attribute
-    def __init__(self, name, age): # Constructor
+    def __init__(self, name, age): # Constructor # this will call every time when we create object
         if PlayerCharacter.membership: # or self.membership
             self.name = name # self refers to the class itself #attribute
             self.age = age #attribute
@@ -35,3 +35,6 @@ print(player1.adding_things(2, 3)) # <__main__.PlayerCharacter object at 0x00000
 player4 = PlayerCharacter.adding_things(2, 3)
 
 print(player4.age) # 5
+
+# Developer Fundamentals
+# Test your assumptions :- 
