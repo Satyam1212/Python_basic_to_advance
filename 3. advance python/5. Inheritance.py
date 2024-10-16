@@ -32,3 +32,15 @@ archer1 = Archer("Robin", 100)
 print(whizard1.sign_in()) # logged in
 print(whizard1.attack()) # attacking with power of 40
 print(archer1.attack()) # attacking with num_arrows of 100
+
+isinstance(whizard1, Wizard) # True
+isinstance(whizard1, User) # True
+isinstance(whizard1, object) # True
+isinstance(whizard1, Archer) # False
+
+issubclass(Wizard, User) # True
+issubclass(Archer, User) # False
+issubclass(Archer, object) # True
+issubclass(Archer, Wizard) # False
+
+# Everything in python is an object and all objects inherit from object class
