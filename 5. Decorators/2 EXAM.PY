@@ -13,10 +13,18 @@ def performance(fn):
 
 @performance
 def long_time():
+    print('1')
     for i in range(100000):
         i*5
 
-long_time() # Nothing happen
+@performance
+def long_time2():
+    print('2')
+    for i in list(range(100000)):
+        i*5
+
+long_time() # It took 0.006069183349609375 ms
+long_time2() # It took 0.008994102478027344 ms
 
 # Like this you can use the performance decorator to measure the time taken by any function to execute.
 
